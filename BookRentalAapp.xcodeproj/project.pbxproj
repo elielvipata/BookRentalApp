@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D4EA423E11B15828CEAB7B8 /* Pods_BookRentalAappTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A084B2BDDD9633FEBF7BC8FF /* Pods_BookRentalAappTests.framework */; };
+		5A4A6B0BFEC7A6602D4767D2 /* Pods_BookRentalAapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB6C257C99D5CA37576991E4 /* Pods_BookRentalAapp.framework */; };
 		C57CB75826A7BFB4009495FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57CB75726A7BFB4009495FE /* AppDelegate.swift */; };
 		C57CB75A26A7BFB4009495FE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57CB75926A7BFB4009495FE /* SceneDelegate.swift */; };
 		C57CB75C26A7BFB4009495FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57CB75B26A7BFB4009495FE /* ViewController.swift */; };
@@ -15,6 +17,9 @@
 		C57CB76426A7BFB5009495FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C57CB76226A7BFB5009495FE /* LaunchScreen.storyboard */; };
 		C57CB76F26A7BFB5009495FE /* BookRentalAappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57CB76E26A7BFB5009495FE /* BookRentalAappTests.swift */; };
 		C57CB77A26A7BFB5009495FE /* BookRentalAappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57CB77926A7BFB5009495FE /* BookRentalAappUITests.swift */; };
+		C5B84E9B26A7C52900DF3118 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B84E9A26A7C52900DF3118 /* Network.swift */; };
+		C5B84E9D26A7CE1200DF3118 /* BookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B84E9C26A7CE1200DF3118 /* BookCell.swift */; };
+		C881C4AD0D6E5D425CD3EF52 /* Pods_BookRentalAapp_BookRentalAappUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A8CD8A29E5B41EBEA2B7A66 /* Pods_BookRentalAapp_BookRentalAappUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B25731B880A4C0DBE0508A6 /* Pods-BookRentalAapp-BookRentalAappUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookRentalAapp-BookRentalAappUITests.debug.xcconfig"; path = "Target Support Files/Pods-BookRentalAapp-BookRentalAappUITests/Pods-BookRentalAapp-BookRentalAappUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		23BDFBC47564401B3FAC2142 /* Pods-BookRentalAapp-BookRentalAappUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookRentalAapp-BookRentalAappUITests.release.xcconfig"; path = "Target Support Files/Pods-BookRentalAapp-BookRentalAappUITests/Pods-BookRentalAapp-BookRentalAappUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5E7A2C75C222DAB1F23A8B39 /* Pods-BookRentalAapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookRentalAapp.release.xcconfig"; path = "Target Support Files/Pods-BookRentalAapp/Pods-BookRentalAapp.release.xcconfig"; sourceTree = "<group>"; };
+		6084B5B3D7DA38834A5227A0 /* Pods-BookRentalAappTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookRentalAappTests.debug.xcconfig"; path = "Target Support Files/Pods-BookRentalAappTests/Pods-BookRentalAappTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6A8CD8A29E5B41EBEA2B7A66 /* Pods_BookRentalAapp_BookRentalAappUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BookRentalAapp_BookRentalAappUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A084B2BDDD9633FEBF7BC8FF /* Pods_BookRentalAappTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BookRentalAappTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C57CB75426A7BFB4009495FE /* BookRentalAapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookRentalAapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C57CB75726A7BFB4009495FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C57CB75926A7BFB4009495FE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +60,11 @@
 		C57CB77526A7BFB5009495FE /* BookRentalAappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookRentalAappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C57CB77926A7BFB5009495FE /* BookRentalAappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookRentalAappUITests.swift; sourceTree = "<group>"; };
 		C57CB77B26A7BFB5009495FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5B84E9A26A7C52900DF3118 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		C5B84E9C26A7CE1200DF3118 /* BookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCell.swift; sourceTree = "<group>"; };
+		DB6C257C99D5CA37576991E4 /* Pods_BookRentalAapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BookRentalAapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF5010A5B712B22DED6F546F /* Pods-BookRentalAapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookRentalAapp.debug.xcconfig"; path = "Target Support Files/Pods-BookRentalAapp/Pods-BookRentalAapp.debug.xcconfig"; sourceTree = "<group>"; };
+		FF1EF958B7AFB851A71AFB1D /* Pods-BookRentalAappTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookRentalAappTests.release.xcconfig"; path = "Target Support Files/Pods-BookRentalAappTests/Pods-BookRentalAappTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A4A6B0BFEC7A6602D4767D2 /* Pods_BookRentalAapp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D4EA423E11B15828CEAB7B8 /* Pods_BookRentalAappTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +88,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C881C4AD0D6E5D425CD3EF52 /* Pods_BookRentalAapp_BookRentalAappUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04E9AA4EF4D81A0FA6DC4C9D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DF5010A5B712B22DED6F546F /* Pods-BookRentalAapp.debug.xcconfig */,
+				5E7A2C75C222DAB1F23A8B39 /* Pods-BookRentalAapp.release.xcconfig */,
+				0B25731B880A4C0DBE0508A6 /* Pods-BookRentalAapp-BookRentalAappUITests.debug.xcconfig */,
+				23BDFBC47564401B3FAC2142 /* Pods-BookRentalAapp-BookRentalAappUITests.release.xcconfig */,
+				6084B5B3D7DA38834A5227A0 /* Pods-BookRentalAappTests.debug.xcconfig */,
+				FF1EF958B7AFB851A71AFB1D /* Pods-BookRentalAappTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		62D8AFE0BFEF8F83F5624381 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DB6C257C99D5CA37576991E4 /* Pods_BookRentalAapp.framework */,
+				6A8CD8A29E5B41EBEA2B7A66 /* Pods_BookRentalAapp_BookRentalAappUITests.framework */,
+				A084B2BDDD9633FEBF7BC8FF /* Pods_BookRentalAappTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C57CB74B26A7BFB4009495FE = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +125,8 @@
 				C57CB76D26A7BFB5009495FE /* BookRentalAappTests */,
 				C57CB77826A7BFB5009495FE /* BookRentalAappUITests */,
 				C57CB75526A7BFB4009495FE /* Products */,
+				04E9AA4EF4D81A0FA6DC4C9D /* Pods */,
+				62D8AFE0BFEF8F83F5624381 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,8 +145,10 @@
 			children = (
 				C57CB75726A7BFB4009495FE /* AppDelegate.swift */,
 				C57CB75926A7BFB4009495FE /* SceneDelegate.swift */,
+				C5B84E9C26A7CE1200DF3118 /* BookCell.swift */,
 				C57CB75B26A7BFB4009495FE /* ViewController.swift */,
 				C57CB75D26A7BFB4009495FE /* Main.storyboard */,
+				C5B84E9A26A7C52900DF3118 /* Network.swift */,
 				C57CB76026A7BFB5009495FE /* Assets.xcassets */,
 				C57CB76226A7BFB5009495FE /* LaunchScreen.storyboard */,
 				C57CB76526A7BFB5009495FE /* Info.plist */,
@@ -135,9 +181,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C57CB77E26A7BFB5009495FE /* Build configuration list for PBXNativeTarget "BookRentalAapp" */;
 			buildPhases = (
+				52C012D3D68A8B8D0419519F /* [CP] Check Pods Manifest.lock */,
 				C57CB75026A7BFB4009495FE /* Sources */,
 				C57CB75126A7BFB4009495FE /* Frameworks */,
 				C57CB75226A7BFB4009495FE /* Resources */,
+				F35ACF6BB733537068F101B9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +200,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C57CB78126A7BFB5009495FE /* Build configuration list for PBXNativeTarget "BookRentalAappTests" */;
 			buildPhases = (
+				AAD7F523E964C5204BF4B6CE /* [CP] Check Pods Manifest.lock */,
 				C57CB76626A7BFB5009495FE /* Sources */,
 				C57CB76726A7BFB5009495FE /* Frameworks */,
 				C57CB76826A7BFB5009495FE /* Resources */,
@@ -170,9 +219,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C57CB78426A7BFB5009495FE /* Build configuration list for PBXNativeTarget "BookRentalAappUITests" */;
 			buildPhases = (
+				B549274739F486DB59920AC0 /* [CP] Check Pods Manifest.lock */,
 				C57CB77126A7BFB5009495FE /* Sources */,
 				C57CB77226A7BFB5009495FE /* Frameworks */,
 				C57CB77326A7BFB5009495FE /* Resources */,
+				3409C404BE592287ADAD9A81 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,6 +304,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3409C404BE592287ADAD9A81 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BookRentalAapp-BookRentalAappUITests/Pods-BookRentalAapp-BookRentalAappUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BookRentalAapp-BookRentalAappUITests/Pods-BookRentalAapp-BookRentalAappUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BookRentalAapp-BookRentalAappUITests/Pods-BookRentalAapp-BookRentalAappUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		52C012D3D68A8B8D0419519F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BookRentalAapp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AAD7F523E964C5204BF4B6CE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BookRentalAappTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B549274739F486DB59920AC0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BookRentalAapp-BookRentalAappUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F35ACF6BB733537068F101B9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BookRentalAapp/Pods-BookRentalAapp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BookRentalAapp/Pods-BookRentalAapp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BookRentalAapp/Pods-BookRentalAapp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C57CB75026A7BFB4009495FE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -260,7 +414,9 @@
 			files = (
 				C57CB75C26A7BFB4009495FE /* ViewController.swift in Sources */,
 				C57CB75826A7BFB4009495FE /* AppDelegate.swift in Sources */,
+				C5B84E9B26A7C52900DF3118 /* Network.swift in Sources */,
 				C57CB75A26A7BFB4009495FE /* SceneDelegate.swift in Sources */,
+				C5B84E9D26A7CE1200DF3118 /* BookCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +589,7 @@
 		};
 		C57CB77F26A7BFB5009495FE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF5010A5B712B22DED6F546F /* Pods-BookRentalAapp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -452,6 +609,7 @@
 		};
 		C57CB78026A7BFB5009495FE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E7A2C75C222DAB1F23A8B39 /* Pods-BookRentalAapp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -471,6 +629,7 @@
 		};
 		C57CB78226A7BFB5009495FE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6084B5B3D7DA38834A5227A0 /* Pods-BookRentalAappTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -493,6 +652,7 @@
 		};
 		C57CB78326A7BFB5009495FE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF1EF958B7AFB851A71AFB1D /* Pods-BookRentalAappTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,6 +675,7 @@
 		};
 		C57CB78526A7BFB5009495FE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B25731B880A4C0DBE0508A6 /* Pods-BookRentalAapp-BookRentalAappUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -535,6 +696,7 @@
 		};
 		C57CB78626A7BFB5009495FE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23BDFBC47564401B3FAC2142 /* Pods-BookRentalAapp-BookRentalAappUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
