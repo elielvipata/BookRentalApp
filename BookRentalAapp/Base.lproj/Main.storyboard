@@ -68,6 +68,7 @@
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="eBy-wm-IeC" id="UOI-iq-EYO"/>
+                        <outlet property="seachBar" destination="Q9S-TA-H0a" id="HEE-Fp-qWF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
