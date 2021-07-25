@@ -54,6 +54,8 @@ class ViewController: UIViewController,UICollectionViewDelegate, UICollectionVie
         }else{
             cell.bookCover.image = UIImage(named: "Inbox-Empty-icon")
         }
+    
+        cell.book = Book(dictionary: volumeInfo)
         
         return cell;
     }
@@ -72,6 +74,22 @@ class ViewController: UIViewController,UICollectionViewDelegate, UICollectionVie
             API.manualSearch(query: newSearch) { (data) in
                 self.data = data!
                 self.collectionView.reloadData()
+            }
+        }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        self.performSegue(withIdentifier: "detailsSegue", sender: indexPath)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "detailsSegue"){
+            if let indexPath = sender as? IndexPath {
+                let data = self.data[indexPath.item]
+                let volumeInfo = data["volumeInfo"] as! [String:Any]
+                let book = Book(dictionary: volumeInfo)
+                let detailsViewController = segue.destination as! DetailsViewController
+                detailsViewController.book = book
             }
         }
     }
