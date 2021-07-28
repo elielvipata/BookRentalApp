@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		3D4EA423E11B15828CEAB7B8 /* Pods_BookRentalAappTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A084B2BDDD9633FEBF7BC8FF /* Pods_BookRentalAappTests.framework */; };
 		5A4A6B0BFEC7A6602D4767D2 /* Pods_BookRentalAapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB6C257C99D5CA37576991E4 /* Pods_BookRentalAapp.framework */; };
+		C5178A5226AF956100397165 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5178A5126AF956100397165 /* LoginViewController.swift */; };
+		C5178A5726AF96CC00397165 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5178A5626AF96CC00397165 /* User.swift */; };
+		C5178A5926AF9AA100397165 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5178A5826AF9AA100397165 /* SignupViewController.swift */; };
+		C5178A5B26AF9ACA00397165 /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5178A5A26AF9ACA00397165 /* ResetPasswordViewController.swift */; };
 		C57CB75826A7BFB4009495FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57CB75726A7BFB4009495FE /* AppDelegate.swift */; };
 		C57CB75A26A7BFB4009495FE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57CB75926A7BFB4009495FE /* SceneDelegate.swift */; };
 		C57CB75C26A7BFB4009495FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57CB75B26A7BFB4009495FE /* ViewController.swift */; };
@@ -48,6 +52,10 @@
 		6084B5B3D7DA38834A5227A0 /* Pods-BookRentalAappTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookRentalAappTests.debug.xcconfig"; path = "Target Support Files/Pods-BookRentalAappTests/Pods-BookRentalAappTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6A8CD8A29E5B41EBEA2B7A66 /* Pods_BookRentalAapp_BookRentalAappUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BookRentalAapp_BookRentalAappUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A084B2BDDD9633FEBF7BC8FF /* Pods_BookRentalAappTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BookRentalAappTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5178A5126AF956100397165 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		C5178A5626AF96CC00397165 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		C5178A5826AF9AA100397165 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		C5178A5A26AF9ACA00397165 /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
 		C57CB75426A7BFB4009495FE /* BookRentalAapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookRentalAapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C57CB75726A7BFB4009495FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C57CB75926A7BFB4009495FE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -122,10 +130,35 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C5178A5326AF964100397165 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				C5B84E9A26A7C52900DF3118 /* Network.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		C5178A5426AF965300397165 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C5B84E9C26A7CE1200DF3118 /* BookCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C5178A5526AF966800397165 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C57CB75B26A7BFB4009495FE /* ViewController.swift */,
+				C5F9370026AA766D003FE50C /* DetailsViewController.swift */,
+				C5178A5126AF956100397165 /* LoginViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		C57CB74B26A7BFB4009495FE = {
 			isa = PBXGroup;
 			children = (
-				C5F936FD26AA713E003FE50C /* Models */,
 				C57CB75626A7BFB4009495FE /* BookRentalAapp */,
 				C57CB76D26A7BFB5009495FE /* BookRentalAappTests */,
 				C57CB77826A7BFB5009495FE /* BookRentalAappUITests */,
@@ -148,14 +181,16 @@
 		C57CB75626A7BFB4009495FE /* BookRentalAapp */ = {
 			isa = PBXGroup;
 			children = (
+				C5F936FD26AA713E003FE50C /* Models */,
+				C5178A5426AF965300397165 /* Views */,
+				C5178A5526AF966800397165 /* ViewControllers */,
+				C5178A5326AF964100397165 /* API */,
+				C57CB76026A7BFB5009495FE /* Assets.xcassets */,
+				C57CB75D26A7BFB4009495FE /* Main.storyboard */,
+				C5178A5A26AF9ACA00397165 /* ResetPasswordViewController.swift */,
+				C5178A5826AF9AA100397165 /* SignupViewController.swift */,
 				C57CB75726A7BFB4009495FE /* AppDelegate.swift */,
 				C57CB75926A7BFB4009495FE /* SceneDelegate.swift */,
-				C5B84E9C26A7CE1200DF3118 /* BookCell.swift */,
-				C57CB75B26A7BFB4009495FE /* ViewController.swift */,
-				C5F9370026AA766D003FE50C /* DetailsViewController.swift */,
-				C57CB75D26A7BFB4009495FE /* Main.storyboard */,
-				C5B84E9A26A7C52900DF3118 /* Network.swift */,
-				C57CB76026A7BFB5009495FE /* Assets.xcassets */,
 				C57CB76226A7BFB5009495FE /* LaunchScreen.storyboard */,
 				C57CB76526A7BFB5009495FE /* Info.plist */,
 			);
@@ -184,6 +219,7 @@
 			isa = PBXGroup;
 			children = (
 				C5F936FE26AA7153003FE50C /* Book.swift */,
+				C5178A5626AF96CC00397165 /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -428,8 +464,12 @@
 			files = (
 				C57CB75C26A7BFB4009495FE /* ViewController.swift in Sources */,
 				C57CB75826A7BFB4009495FE /* AppDelegate.swift in Sources */,
+				C5178A5926AF9AA100397165 /* SignupViewController.swift in Sources */,
+				C5178A5B26AF9ACA00397165 /* ResetPasswordViewController.swift in Sources */,
 				C5F936FF26AA7153003FE50C /* Book.swift in Sources */,
 				C5B84E9B26A7C52900DF3118 /* Network.swift in Sources */,
+				C5178A5226AF956100397165 /* LoginViewController.swift in Sources */,
+				C5178A5726AF96CC00397165 /* User.swift in Sources */,
 				C5F9370126AA766D003FE50C /* DetailsViewController.swift in Sources */,
 				C57CB75A26A7BFB4009495FE /* SceneDelegate.swift in Sources */,
 				C5B84E9D26A7CE1200DF3118 /* BookCell.swift in Sources */,

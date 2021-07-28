@@ -9,6 +9,36 @@ import Foundation
 
 struct API{
     
+    static func signup(username:String, password:String, completion: @escaping ([[String:Any]]?) -> Void){
+
+        let applicationId = "1234test"
+        let url = URL(string: "http://192.168.1.9:1337/parse/users")!
+        
+        var request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10)
+        request.addValue(applicationId, forHTTPHeaderField: "X-Parse-Application-Id")
+        request.addValue("1", forHTTPHeaderField: "X-Parse-REST-API-Key")
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.addValue(username, forHTTPHeaderField: "username")
+        request.addValue(password, forHTTPHeaderField: "password")
+        
+        let session = URLSession(configuration: .default, delegate: nil, delegateQueue: OperationQueue.main)
+        let task = session.dataTask(with: request) { (data, response, error) in
+            // This will run when the network request returns
+            if let error = error {
+                print(error.localizedDescription)
+            } else if let data = data {
+                let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
+                let books = dataDictionary["results"] as! [[String:Any]]
+                return completion(books)
+                
+            }
+        }
+        
+        task.resume()
+
+        
+    }
+    
     static func bookSearch (completion: @escaping ([[String:Any]]?) -> Void) {
         let apikey = "AIzaSyA67wIEXoKqQHal2H7BzxhVrPNWzRSD498"
                 
