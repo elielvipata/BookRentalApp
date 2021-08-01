@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Parse
 
 class Book{
 //    - title
@@ -22,6 +23,13 @@ class Book{
     var thumbnail:String?
     var page_count:Int?
     var publishedDate:String?
+    var id:String?
+    var dictionary:[String:Any?]
+    var rented:Bool
+    var returned:Bool
+    var user:PFUser
+    var bookID:String?
+    
     
     init(dictionary: [String:Any]) {
         self.title = dictionary["title"] as? String
@@ -38,7 +46,11 @@ class Book{
         }else{
             self.thumbnail = "nil"
         }
+        
+        self.dictionary = dictionary
+        self.returned = false
+        self.rented = false
+        self.user = PFUser.current()!
     }
-    
     
 }

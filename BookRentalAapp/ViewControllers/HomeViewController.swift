@@ -8,7 +8,7 @@
 import UIKit
 import AlamofireImage
 
-class ViewController: UIViewController,UICollectionViewDelegate, UICollectionViewDataSource, UISearchBarDelegate {
+class HomeViewController: UIViewController,UICollectionViewDelegate, UICollectionViewDataSource, UISearchBarDelegate {
 
     @IBOutlet weak var collectionView: UICollectionView!
     var data:[[String:Any?]] = []
@@ -28,7 +28,9 @@ class ViewController: UIViewController,UICollectionViewDelegate, UICollectionVie
         
         let width = (view.frame.size.width - layout.minimumInteritemSpacing*2) / 3
         layout.itemSize = CGSize(width: width, height: width*3/2)
+        getCartData()
         getData()
+        
         
     }
     
@@ -37,6 +39,16 @@ class ViewController: UIViewController,UICollectionViewDelegate, UICollectionVie
             self.data = data!
             self.filteredData = data!
             self.collectionView.reloadData()
+        }
+    }
+    
+    func getCartData(){
+        API.getCart(){ (data) in
+            let defaults = UserDefaults.standard
+            defaults.setValue(data.count, forKey: "cart_total")
+            if(data.count > 0){
+                self.tabBarController?.tabBar.items![2].badgeValue = String(data.count)
+            }
         }
     }
     
@@ -56,6 +68,7 @@ class ViewController: UIViewController,UICollectionViewDelegate, UICollectionVie
         }
     
         cell.book = Book(dictionary: volumeInfo)
+        cell.book?.id = book["id"] as! String
         
         return cell;
     }
@@ -92,6 +105,18 @@ class ViewController: UIViewController,UICollectionViewDelegate, UICollectionVie
                 detailsViewController.book = book
             }
         }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        print("will Appear")
+        getData()
+        getCartData()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        print("did Appear")
+        getData()
+        getCartData()
     }
 }
 

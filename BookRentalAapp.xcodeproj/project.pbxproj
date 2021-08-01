@@ -13,9 +13,11 @@
 		C5178A5726AF96CC00397165 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5178A5626AF96CC00397165 /* User.swift */; };
 		C5178A5926AF9AA100397165 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5178A5826AF9AA100397165 /* SignupViewController.swift */; };
 		C5178A5B26AF9ACA00397165 /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5178A5A26AF9ACA00397165 /* ResetPasswordViewController.swift */; };
+		C5178A5F26B2542800397165 /* CartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5178A5E26B2542800397165 /* CartCell.swift */; };
+		C5178A6126B2545800397165 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5178A6026B2545800397165 /* CartViewController.swift */; };
 		C57CB75826A7BFB4009495FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57CB75726A7BFB4009495FE /* AppDelegate.swift */; };
 		C57CB75A26A7BFB4009495FE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57CB75926A7BFB4009495FE /* SceneDelegate.swift */; };
-		C57CB75C26A7BFB4009495FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57CB75B26A7BFB4009495FE /* ViewController.swift */; };
+		C57CB75C26A7BFB4009495FE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57CB75B26A7BFB4009495FE /* HomeViewController.swift */; };
 		C57CB75F26A7BFB4009495FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C57CB75D26A7BFB4009495FE /* Main.storyboard */; };
 		C57CB76126A7BFB5009495FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C57CB76026A7BFB5009495FE /* Assets.xcassets */; };
 		C57CB76426A7BFB5009495FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C57CB76226A7BFB5009495FE /* LaunchScreen.storyboard */; };
@@ -56,10 +58,12 @@
 		C5178A5626AF96CC00397165 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		C5178A5826AF9AA100397165 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		C5178A5A26AF9ACA00397165 /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
+		C5178A5E26B2542800397165 /* CartCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartCell.swift; sourceTree = "<group>"; };
+		C5178A6026B2545800397165 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
 		C57CB75426A7BFB4009495FE /* BookRentalAapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookRentalAapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C57CB75726A7BFB4009495FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C57CB75926A7BFB4009495FE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C57CB75B26A7BFB4009495FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C57CB75B26A7BFB4009495FE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		C57CB75E26A7BFB4009495FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C57CB76026A7BFB5009495FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C57CB76326A7BFB5009495FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -142,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				C5B84E9C26A7CE1200DF3118 /* BookCell.swift */,
+				C5178A5E26B2542800397165 /* CartCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -149,8 +154,11 @@
 		C5178A5526AF966800397165 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				C57CB75B26A7BFB4009495FE /* ViewController.swift */,
+				C57CB75B26A7BFB4009495FE /* HomeViewController.swift */,
+				C5178A6026B2545800397165 /* CartViewController.swift */,
 				C5F9370026AA766D003FE50C /* DetailsViewController.swift */,
+				C5178A5826AF9AA100397165 /* SignupViewController.swift */,
+				C5178A5A26AF9ACA00397165 /* ResetPasswordViewController.swift */,
 				C5178A5126AF956100397165 /* LoginViewController.swift */,
 			);
 			path = ViewControllers;
@@ -187,8 +195,6 @@
 				C5178A5326AF964100397165 /* API */,
 				C57CB76026A7BFB5009495FE /* Assets.xcassets */,
 				C57CB75D26A7BFB4009495FE /* Main.storyboard */,
-				C5178A5A26AF9ACA00397165 /* ResetPasswordViewController.swift */,
-				C5178A5826AF9AA100397165 /* SignupViewController.swift */,
 				C57CB75726A7BFB4009495FE /* AppDelegate.swift */,
 				C57CB75926A7BFB4009495FE /* SceneDelegate.swift */,
 				C57CB76226A7BFB5009495FE /* LaunchScreen.storyboard */,
@@ -462,13 +468,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C57CB75C26A7BFB4009495FE /* ViewController.swift in Sources */,
+				C57CB75C26A7BFB4009495FE /* HomeViewController.swift in Sources */,
 				C57CB75826A7BFB4009495FE /* AppDelegate.swift in Sources */,
 				C5178A5926AF9AA100397165 /* SignupViewController.swift in Sources */,
 				C5178A5B26AF9ACA00397165 /* ResetPasswordViewController.swift in Sources */,
 				C5F936FF26AA7153003FE50C /* Book.swift in Sources */,
 				C5B84E9B26A7C52900DF3118 /* Network.swift in Sources */,
+				C5178A6126B2545800397165 /* CartViewController.swift in Sources */,
 				C5178A5226AF956100397165 /* LoginViewController.swift in Sources */,
+				C5178A5F26B2542800397165 /* CartCell.swift in Sources */,
 				C5178A5726AF96CC00397165 /* User.swift in Sources */,
 				C5F9370126AA766D003FE50C /* DetailsViewController.swift in Sources */,
 				C57CB75A26A7BFB4009495FE /* SceneDelegate.swift in Sources */,
@@ -656,7 +664,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.eliel.BookRentalAapp;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eliel.BookRentalAapp-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -676,7 +684,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.eliel.BookRentalAapp;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eliel.BookRentalAapp-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

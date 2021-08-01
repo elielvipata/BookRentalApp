@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Parse
 
 struct API{
     
@@ -35,8 +36,6 @@ struct API{
         }
         
         task.resume()
-
-        
     }
     
     static func bookSearch (completion: @escaping ([[String:Any]]?) -> Void) {
@@ -84,5 +83,23 @@ struct API{
         }
         
         task.resume()
-    }}
+    }
+    
+    static func getCart (completion: @escaping ([PFObject?]) -> Void) {
+        let user = PFUser.current()!
+        let query = PFQuery(className: "Book")
+        query.whereKey("user", equalTo: user)
+        query.whereKey("rented", equalTo: false)
+        query.whereKey("returned", equalTo: false)
+        query.order(byDescending: "createdAt")
+        query.findObjectsInBackground { (books, error) in
+            if(books != nil){
+                let bookData = books! as [PFObject]
+                return completion(bookData)
+            }
+        }
+    }
+}
+
+    
 

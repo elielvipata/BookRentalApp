@@ -15,6 +15,9 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
      
+        if(PFUser.current() != nil){
+            performSegue(withIdentifier: "loginSegue", sender: nil)
+        }
         // Do any additional setup after loading the view.
     }
     
